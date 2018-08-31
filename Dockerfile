@@ -26,14 +26,19 @@ RUN apt-get update && apt-get install -y \
 		quilt \
 		reprepro \
 		sudo \
+		cowbuilder \
 		--no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN find /etc/apt/sources.list* -type f -exec sed -i 'p; s/^deb /deb-src /' '{}' +
 RUN echo 'ALL ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/allusers-nopass
 
+COPY pbuilderrc /root/.pbuilderrc
+#RUN git-pbuilder create
+
 ENV LANG C.UTF-8 
 ENV TERM xterm-256color
 ENV QUILT_PATCHES debian/patches
+
 
 CMD /bin/bash

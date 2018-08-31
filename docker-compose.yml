@@ -2,3 +2,8 @@ version: '3'
 services:
   builder:
     build: .
+    privileged: true
+    volumes: 
+      - ./packages:/root/packages
+    cap_add:
+      - SYS_ADMIN
