@@ -1,0 +1,9 @@
+
+[git/abi-monitor]
+checkout = git clone 'git@salsa.debian.org:cinemast-guest/abi-monitor.git' 'abi-monitor'
+
+[git/abi-tracker]
+checkout = git clone 'git@salsa.debian.org:cinemast-guest/abi-tracker.git' 'abi-tracker'
+
+[git/j4-dmenu-desktop]
+checkout = git clone 'git@salsa.debian.org:cinemast-guest/j4-dmenu-desktop.git' 'j4-dmenu-desktop'
