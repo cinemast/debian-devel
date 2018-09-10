@@ -1,0 +1,2 @@
+export DEBEMAIL="dev@spiessknafl.at"
+export DEBFULLNAME="Peter Spiess-Knafl"
