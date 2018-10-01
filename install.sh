@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt install devscripts git-buildpackage
+sudo apt install devscripts git-buildpackage myrepos
